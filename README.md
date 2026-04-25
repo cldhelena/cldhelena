@@ -2,7 +2,7 @@
 
 # Helena Callado
 
-### Analytics Engineer · DataOps & AI Automation · Revenue Operations
+### Analytics Engineer · Revenue Operations · AI & DataOps Automation
 
 *I don't build dashboards. I build systems that turn data into decisions — and decisions into revenue.*
 
@@ -15,14 +15,13 @@
 
 ## About Me
 
-I'm an Analytics Engineer and Revenue Ops practitioner based in Florianópolis, currently at **Asksuite** — a B2B SaaS company in the hospitality sector. My work lives at the intersection of data engineering and business operations: I model data, build pipelines, and wire up AI automations that make the revenue machine run faster and more reliably.
+I'm an Analytics Engineer working at the intersection of data infrastructure and revenue operations. At **Asksuite** — a global B2B SaaS platform for the hospitality sector — I own the full data stack: from pipeline architecture and data modeling to AI-powered automations that drive business outcomes across international markets.
 
-What sets my work apart is context. I don't just apply frameworks — I understand why a churn driver matters, how a historical distortion corrupts pipeline analysis, and what "good data" actually means for a CS team tracking health scores. That business lens shapes every technical decision I make.
+My work spans data engineering, BI, and GTM automation, always with a revenue lens. I model data in BigQuery, build self-improving pipelines with N8N and Claude, redesign dashboards with correct historical modeling, and ship GTM tooling that cuts days of manual work down to hours. I work closely with Sales, CS, and Product teams in markets across Latin America, North America, and Europe.
 
-Before data, I taught martial arts. That background shows up in how I work: methodical, iterative, and focused on long-term form over short-term wins.
+What differentiates my approach is the combination of engineering rigor with business context. I don't just automate tasks — I design systems that audit themselves, improve over time, and connect directly to metrics that matter: MRR, NRC, churn, and pipeline conversion.
 
-> [!NOTE]
-> I'm actively building toward a career in **Data Engineering and Analytics Engineering**, with focus on scalable pipelines, robust data models, and systems that improve themselves over time.
+Before data, I taught martial arts. That background shows up in how I work: methodical, iterative, and focused on long-term fundamentals over short-term fixes.
 
 ---
 
@@ -34,16 +33,21 @@ Before data, I taught martial arts. That background shows up in how I work: meth
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 
+**Data Modeling & Transformation**
+
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
+![Data Modeling](https://img.shields.io/badge/Data%20Modeling%20%28SCD%2C%20Star%20Schema%29-6D28D9?style=flat-square&logo=databricks&logoColor=white)
+
+**Cloud & Warehouses**
+
+![Google BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&logo=googlebigquery&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+
 **BI & Analytics**
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Google BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&logo=googlebigquery&logoColor=white)
-
-**Cloud & Data Infrastructure**
-
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![ETL](https://img.shields.io/badge/ETL%20Pipelines-00897B?style=flat-square&logo=apacheairflow&logoColor=white)
-![Data Modeling](https://img.shields.io/badge/Data%20Modeling-6D28D9?style=flat-square&logo=databricks&logoColor=white)
 
 **Automation & AI**
 
@@ -52,6 +56,11 @@ Before data, I taught martial arts. That background shows up in how I work: meth
 ![Claude](https://img.shields.io/badge/Claude-D97706?style=flat-square&logo=anthropic&logoColor=white)
 ![Microsoft MCP](https://img.shields.io/badge/Microsoft%20MCP-0078D4?style=flat-square&logo=microsoft&logoColor=white)
 
+**DevOps & Version Control**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
 ---
 
 ## Projects
@@ -59,7 +68,9 @@ Before data, I taught martial arts. That background shows up in how I work: meth
 ### 🔁 Churn Report Automation — N8N + Claude Code
 
 > [!IMPORTANT]
-> This pipeline eliminated a 5-day manual process and replaced it with a self-improving monthly automation — no human intervention required after deploy.
+> Eliminated a 5-day manual process and replaced it with a self-improving monthly pipeline — no human intervention required after deploy.
+
+**Stack:** N8N · Claude · Slack API · Google Sheets
 
 **The system flow:**
 
@@ -90,10 +101,59 @@ graph LR
 
 ---
 
+### 🧩 Clay AI — GTM Engineering & Demand Generation
+
+> [!IMPORTANT]
+> Proposed and implemented Clay AI for the GTM stack. Reduced demand generation cycle from **7 days to 1 day**.
+
+**Stack:** Clay AI · N8N · BigQuery · Google Sheets
+
+<details>
+<summary>📋 Full technical details</summary>
+
+**Context:** I identified Clay AI as a strategic fit for the GTM stack and led its adoption — from the business case to full implementation.
+
+**What was built:**
+- **Demand generation automation**: end-to-end outbound workflow that cut the generation cycle from 7 days to 1 day
+- **Lead scoring**: automated scoring model using enriched signals to prioritize outbound effort
+- **Data enrichment**: automated enrichment pipeline pulling firmographic and behavioral data into the CRM
+- **Data governance**: implemented governance standards across **600K+ rows**, improving quality and transparency for global GTM teams
+
+**Result:** Faster pipeline generation, higher-quality leads entering the funnel, and a scalable enrichment infrastructure that doesn't depend on manual research. Dashboard adoption increased **80%** after the data quality revamp.
+
+</details>
+
+---
+
+### 📈 Events Dashboard — Payback & Funnel Analysis
+
+> [!TIP]
+> The question wasn't "how many users attended?" — it was "which events actually pay off?"
+
+**Stack:** BigQuery · Power BI · SQL · DAX
+
+<details>
+<summary>📋 Full technical details</summary>
+
+**Problem:** Event performance was measured in vanity metrics — attendance and reach — with no connection to financial return.
+
+**What was built:**
+- **Funnel conversion analysis**: end-to-end tracking from event attendance to pipeline and closed revenue
+- **Payback structure**: time-to-recover-investment modeling for each event type and market
+- **Single source of truth**: unified view for Product and Business teams to evaluate event ROI
+
+**Impact:** Changed the internal conversation from surface-level engagement metrics to sustainability and return — enabling better budget allocation and go-to-market decisions across international markets.
+
+</details>
+
+---
+
 ### 📊 Sales Dashboard Rebuild — SCD Type 2 + BigQuery + Power BI
 
 > [!TIP]
-> If your dashboard doesn't handle organizational changes correctly, your historical metrics are lying to you. SCD Type 2 fixes that.
+> If your data model doesn't handle organizational changes correctly, your historical metrics are lying to you. SCD Type 2 fixes that.
+
+**Stack:** BigQuery · Power BI · SQL · DAX · SCD Type 2
 
 **Data model architecture:**
 
@@ -104,7 +164,7 @@ graph TD
     C --> D["📈 Power BI\nFunnel Dashboard"]
     D --> E["SQL → Opportunity\nconversion"]
     D --> F["Opportunity → Deal\nconversion"]
-    D --> G["Rep performance\nwithout historical distortion"]
+    D --> G["Rep performance\nno historical distortion"]
 ```
 
 <details>
@@ -115,9 +175,9 @@ graph TD
 **Solution:** Full redesign with **SCD Type 2** modeling on the team dimension in BigQuery:
 - Optimized queries across the entire data model
 - Cleaner layout surfacing SQL → Opportunity → Deal conversion rates
-- No historical distortion from team restructures
+- No historical distortion from team restructures or rep movements
 
-**Result:** Reliable pipeline analysis, accurate rep-level performance tracking, and a dashboard leadership can trust over time.
+**Result:** Reliable pipeline analysis, accurate rep-level performance tracking, and a dashboard leadership can trust across time periods.
 
 </details>
 
@@ -126,7 +186,9 @@ graph TD
 ### 🤖 Power BI + Claude via Microsoft MCP
 
 > [!IMPORTANT]
-> Reduced board-level data audit time from **20+ hours/month to ~10 hours/month**. Audits now happen in natural language with full evidence trail.
+> Reduced board-level data audit time from **20+ hours/month to ~10 hours/month**. Audits now happen in natural language with a full evidence trail.
+
+**Stack:** Power BI · Claude · Microsoft MCP · DAX · BigQuery
 
 <details>
 <summary>📋 Full technical details</summary>
@@ -139,34 +201,6 @@ graph TD
 - Business logic (NRC, MRR, CS funnel) injected directly into the model
 
 **Result:** Audit time cut in half. The team spends less time checking data and more time acting on it.
-
-</details>
-
----
-
-### 📈 Events Dashboard with Payback Analysis
-
-<details>
-<summary>📋 Details</summary>
-
-Built a dashboard connecting user behavior to financial impact — funnel conversion, payback structure (time to recover investment), and a single source of truth for product and business teams.
-
-Changed the internal question from *"how many users?"* to *"which initiatives actually pay off?"*
-
-</details>
-
----
-
-### 🧩 Clay AI — GTM Data Enrichment at Scale
-
-<details>
-<summary>📋 Details</summary>
-
-Automated data enrichment, segmentation, and AI-powered outbound workflows using Clay AI.
-
-- Data governance implemented across **600K+ rows**
-- Improved quality and transparency for global GTM teams
-- Dashboard adoption increased **80%** after the revamp
 
 </details>
 
@@ -186,19 +220,18 @@ Automated data enrichment, segmentation, and AI-powered outbound workflows using
 
 ## Currently Building
 
-> [!TIP]
-> Open to conversations about data architecture, Revenue Ops, and agentic AI systems.
-
 - 🏗️ **Agentic data systems** — multi-agent workflows with closed feedback loops
 - 🔧 **ETL pipeline architecture** — structured ingestion, transformation, and delivery at scale
-- 📚 **Data Engineering fundamentals** — orchestration, data contracts, pipeline observability
-- 🎙️ **Sharing publicly** — technical content on RevOps + data engineering for the Portuguese-speaking data community
+- 📚 **Data Engineering depth** — orchestration, data contracts, pipeline observability with dbt + Snowflake
+- 🎙️ **Sharing publicly** — technical content on RevOps + analytics engineering for the Portuguese-speaking data community
 
 ---
 
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/Let's%20connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/helena-callado-8549102b6/)
+
+*Open to conversations about analytics engineering, Revenue Ops, agentic AI systems, and international GTM data strategy.*
 
 ---
 
